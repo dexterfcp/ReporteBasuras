@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.fcp.reportebasuras.nuevaspantallas.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_listar_usuarios"
+        android:name="com.fcp.reportebasuras.nuevaspantallas.admin.listarusuarios.ListarUsuariosFragment"
+        android:label="@string/menu_listar_usuarios"
+        tools:layout="@layout/fragment_listar_usuarios" />
+
+    <fragment
+        android:id="@+id/nav_crear_usuario"
+        android:name="com.fcp.reportebasuras.nuevaspantallas.admin.crearusuario.CrearUsuarioFragment"
+        android:label="@string/menu_crear_usuario"
+        tools:layout="@layout/fragment_crear_usuario" />
+
+    <fragment
+        android:id="@+id/nav_ver_estadisticas"
+        android:name="com.fcp.reportebasuras.nuevaspantallas.admin.verificarestadisticas.VerificarEstadisticasFragment"
+        android:label="@string/menu_verificar_estadisticas"
+        tools:layout="@layout/fragment_verificar_estadisticas" />
+
+    <fragment
+        android:id="@+id/nav_crear_puntos"
+        android:name="com.fcp.reportebasuras.nuevaspantallas.recolector.crearpuntos.CrearPuntosFragment"
+        android:label="@string/menu_crear_puntos"
+        tools:layout="@layout/crear_puntos_fragment" />
+
+
+    <fragment
+        android:id="@+id/nav_registra_recolecta"
+        android:name="com.fcp.reportebasuras.nuevaspantallas.recolector.registrarecolecta.RegistrarRecolectaFragment"
+        android:label="@string/menu_registra_recolecta"
+        tools:layout="@layout/registrar_recolecta_fragment" />
+
+    <fragment
+        android:id="@+id/nav_leer_puntos"
+        android:name="com.fcp.reportebasuras.nuevaspantallas.usuario.leerpuntos.LeerPuntosFragment"
+        android:label="@string/menu_leer_puntos"
+        tools:layout="@layout/leer_puntos_fragment" />
+
+    <fragment
+        android:id="@+id/nav_resumen_actividad"
+        android:name="com.fcp.reportebasuras.nuevaspantallas.usuario.resumenactividad.ResumenActividadFragment"
+        android:label="@string/menu_resumen_actividad"
+        tools:layout="@layout/resumen_actividad_fragment" />
+
+    <fragment
+        android:id="@+id/nav_solicitar_recoleccion"
+        android:name="com.fcp.reportebasuras.nuevaspantallas.usuario.solicitarrecoleccion.SolicitarRecoleccionFragment"
+        android:label="@string/menu_solicitar_recoleccion"
+        tools:layout="@layout/fragment_verificar_estadisticas" />
+
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.fcp.reportebasuras.nuevaspantallas.compartir.CompartirFragment"
+        android:label="@string/menu_compartir"
+        tools:layout="@layout/fragment_compartir" />
+
+    <fragment
+        android:id="@+id/nav_send"
+        android:name="com.fcp.reportebasuras.nuevaspantallas.soporte.SoporteFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_soporte" />
+</navigation>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AECFB0"
+    tools:context=".NuevoReporte">
+
+    <ImageButton
+        android:id="@+id/btn_imagenrep"
+        android:layout_width="348dp"
+        android:layout_height="290dp"
+        android:layout_marginTop="28dp"
+        android:tint="#002D351E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_report_image" />
+
+    <EditText
+        android:id="@+id/txt_reporte"
+        android:layout_width="347dp"
+        android:layout_height="142dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:lines="6"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_imagenrep" />
+
+    <Button
+        android:id="@+id/btn_cancelar"
+        android:layout_width="153dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:background="#B10505"
+        android:text="Cancelar"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_reporte"
+        app:layout_constraintVertical_bias="0.154" />
+
+    <Button
+        android:id="@+id/btn_enviar"
+        android:layout_width="153dp"
+        android:layout_height="73dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:background="#009688"
+        android:text="Enviar"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_reporte"
+        app:layout_constraintVertical_bias="0.153" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

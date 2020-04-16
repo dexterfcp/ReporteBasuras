@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Limpiando Colombia</string>
+    <string name="aceptar_terminos">Aceptar Términos y Condiciones</string>
+    <string name="continuar">Continuar</string>
+    <string name="title_activity_principal_admin">Limpiando Colombia</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Limpiando Colombia</string>
+    <string name="nav_header_subtitle">Camara Colombiana Plastico</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Proximamente</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_listar_usuarios">Listar Usuarios</string>
+    <string name="menu_crear_usuario">Crear Usuario</string>
+    <string name="menu_verificar_estadisticas">Verificar Estadisticas</string>
+
+    <string name="menu_registra_recolecta">Registar Recoleccion</string>
+    <string name="menu_crear_puntos">Crear Puntos</string>
+
+    <string name="menu_leer_puntos">Leer Puntos</string>
+    <string name="menu_resumen_actividad">Resumen Actividad</string>
+    <string name="menu_solicitar_recoleccion">Solicitar Recoleccion</string>
+
+    <string name="menu_compartir">Compartir</string>
+    <string name="menu_send">Soporte</string>
+
+    <string name="error_camara">Error al visualizar la camara</string>
+
+
+    <string name="label_crear_puntos" >Puntos a Crear :</string>
+    <string name="text_crear_puntos">Crear Puntos</string>
+</resources>
