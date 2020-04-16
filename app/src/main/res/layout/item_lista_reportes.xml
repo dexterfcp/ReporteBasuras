@@ -5,6 +5,7 @@
     android:layout_height="wrap_content"
     android:gravity="left|center"
     android:padding="5dp"
+    android:theme="@style/Base.Theme.MyApp"
     android:id="@+id/contenedorPrincipal"
     >
     <ImageView
