@@ -21,6 +21,7 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:gravity="right"
                 android:orientation="vertical">
 
                 <TextView
@@ -28,13 +29,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Nombre" />
+                    android:textSize="25dp"
+                    android:text="Num Recolecta" />
 
                 <TextView
                     android:id="@+id/textView12"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textSize="25dp"
                     android:text="Peso" />
 
             </LinearLayout>
@@ -47,16 +50,15 @@
 
                 <EditText
                     android:id="@+id/editText5"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Name" />
+                    android:inputType="textPersonName" />
 
                 <EditText
                     android:id="@+id/editText6"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
@@ -69,6 +71,7 @@
             android:id="@+id/button4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="25dp"
             android:text="Registar Recolecta" />
     </LinearLayout>
 
