@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/estilo_btn"
     tools:context=".nuevaspantallas.usuario.solicitarrecoleccion.SolicitarRecoleccionFragment">
     <LinearLayout
         android:layout_width="0dp"
@@ -66,11 +67,13 @@
             </LinearLayout>
 
         </LinearLayout>
+
         <Button
             android:id="@+id/button5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Solicitar" />
+            android:text="Solicitar"
+            android:theme="@style/AppTheme.BotonesApp" />
     </LinearLayout>
 
 

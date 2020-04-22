@@ -39,6 +39,12 @@
         <item name="itemTextAppearance">?attr/textAppearanceBody2</item>
     </style>
 
+    <style name="AppTheme.BotonesApp" parent="AppTheme">
+        <item name="background">#344E2D</item>
+        <item name="color">#FFFFFF</item>
+        <item name="cornerRadius">7dp</item>
+        <item name="android:layout_margin">3dp</item>
+    </style>
 
 
 
