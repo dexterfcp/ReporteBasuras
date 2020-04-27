@@ -23,13 +23,7 @@ public class CrearUsuarioFragment extends Fragment {
         crearUsuarioViewModel =
                 ViewModelProviders.of(this).get(CrearUsuarioViewModel.class);
         View root = inflater.inflate(R.layout.fragment_crear_usuario, container, false);
-        final TextView textView = root.findViewById(R.id.text_slideshow);
-        crearUsuarioViewModel.getText().observe(this, new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
+
         return root;
     }
 }

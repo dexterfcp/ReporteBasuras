@@ -45,8 +45,8 @@ public class PrincipalAdmin extends AppCompatActivity {
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home, R.id.nav_listar_usuarios, R.id.nav_crear_usuario,
-                R.id.nav_ver_estadisticas, R.id.nav_share, R.id.nav_send,R.id.nav_crear_puntos,R.id.nav_registra_recolecta,
-                R.id.nav_leer_puntos,R.id.nav_resumen_actividad,R.id.nav_solicitar_recoleccion)
+                R.id.nav_ver_estadisticas, R.id.nav_share, R.id.nav_send,R.id.nav_registra_recolecta,
+                R.id.nav_resumen_actividad,R.id.nav_solicitar_recoleccion)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);

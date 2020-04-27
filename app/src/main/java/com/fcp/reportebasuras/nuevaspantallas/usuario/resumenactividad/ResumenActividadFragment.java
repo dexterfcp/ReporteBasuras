@@ -25,7 +25,7 @@ public class ResumenActividadFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.resumen_actividad_fragment, container, false);
+        return inflater.inflate(R.layout.fragment_resumen_actividad, container, false);
     }
 
     @Override

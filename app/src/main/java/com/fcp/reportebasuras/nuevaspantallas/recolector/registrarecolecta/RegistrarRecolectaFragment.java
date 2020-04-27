@@ -28,12 +28,7 @@ public class RegistrarRecolectaFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-
-
-
-
-
-        return inflater.inflate(R.layout.registrar_recolecta_fragment, container, false);
+        return inflater.inflate(R.layout.fragment_registrar_recolecta, container, false);
     }
 
     @Override

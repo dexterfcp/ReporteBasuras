@@ -13,6 +13,7 @@
 
     <color name="green_200">#03dac6</color> <!--Color secondary-->
     <color name="green_500">#018786</color> <!--Color secondary variant-->
+    <color name="green_fondo">#A869F0AE</color>
 
     <color name="red_200">#cf6679</color> <!--Color error (dark)-->
     <color name="red_600">#b00020</color> <!--Color error (light)-->

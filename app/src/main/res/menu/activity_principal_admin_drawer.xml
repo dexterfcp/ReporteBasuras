@@ -22,18 +22,10 @@
             android:title="@string/menu_verificar_estadisticas" />
 
         <item
-            android:id="@+id/nav_crear_puntos"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="@string/menu_crear_puntos" />
-        <item
             android:id="@+id/nav_registra_recolecta"
             android:icon="@drawable/ic_menu_manage"
             android:title="@string/menu_registra_recolecta" />
 
-        <item
-            android:id="@+id/nav_leer_puntos"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_leer_puntos" />
         <item
             android:id="@+id/nav_resumen_actividad"
             android:icon="@drawable/ic_menu_slideshow"

@@ -27,7 +27,7 @@
 
     <string name="error_camara">Error al visualizar la camara</string>
 
-
-    <string name="label_crear_puntos" >Puntos a Crear :</string>
+    <string name="label_enviar_puntos" >Puntos a Crear :</string>
+    <string name="label_id_recolecta">Id Recolecta :</string>
     <string name="text_crear_puntos">Crear Puntos</string>
 </resources>
