@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.fcp.reportebasuras", appContext.getPackageName());
+        assertEquals("com.fcp.reportebasiras", appContext.getPackageName());
     }
 }

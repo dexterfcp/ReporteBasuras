@@ -1,8 +1,8 @@
 package com.fcp.reportebasuras;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.fcp.reportebasuras.menuapp.MenuAppRBas;
 import com.fcp.reportebasuras.modelo.dao.UsuarioDAO;
 import com.fcp.reportebasuras.modelo.vo.Usuario;
 
@@ -32,7 +33,7 @@ public class Registro extends AppCompatActivity {
                 if(user.getCorreo() != null && !user.getCorreo().isEmpty() &&
                         user.getNombres() != null && !user.getNombres().isEmpty()) {
                     crearUsuarioenDB(user);
-                    Intent pantallaPrincipal = new Intent(getApplicationContext(), PrincipalAdmin.class);
+                    Intent pantallaPrincipal = new Intent(getApplicationContext(), MenuAppRBas.class);
                     startActivity(pantallaPrincipal);
                 }else{
                     AlertDialog alertDialog = new AlertDialog.Builder(getApplicationContext()).create();
@@ -41,9 +42,9 @@ public class Registro extends AppCompatActivity {
                     alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
-                                    dialog.dismiss();
-                            }
-                        });
+                            dialog.dismiss();
+                        }
+                    });
                     alertDialog.show();
                 }
             }

@@ -11,8 +11,6 @@ import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.CheckBox;
 
-import com.fcp.reportebasuras.modelo.dao.UsuarioDAO;
-import com.fcp.reportebasuras.modelo.vo.Usuario;
 
 public class Terminos extends AppCompatActivity {
 
@@ -60,6 +58,4 @@ public class Terminos extends AppCompatActivity {
         });
 
     }
-
-
 }

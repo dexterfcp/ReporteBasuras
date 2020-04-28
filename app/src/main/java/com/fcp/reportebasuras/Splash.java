@@ -34,7 +34,7 @@ public class Splash extends AppCompatActivity {
                 UsuarioDAO daoUsu = new UsuarioDAO(getApplicationContext());
                 Usuario vo = daoUsu.consultarUsuarioUnico();
                 if(vo != null) {
-                    Intent pantallaPrincipal = new Intent(getApplicationContext(), PrincipalAdmin.class);
+                    Intent pantallaPrincipal = new Intent(getApplicationContext(), Terminos.class);
                     startActivity(pantallaPrincipal);
                 }else{
                     Intent pantallaPrincipal = new Intent(getApplicationContext(), Terminos.class);
