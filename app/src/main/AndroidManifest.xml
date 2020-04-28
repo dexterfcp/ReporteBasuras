@@ -17,6 +17,8 @@
         android:hardwareAccelerated="false"
         android:theme="@style/AppTheme">
         <activity
+            android:configChanges="orientation"
+            android:screenOrientation="locked"
             android:windowSoftInputMode="adjustPan|adjustResize"
             android:name=".PrincipalAdmin"
             android:label="@string/title_activity_principal_admin"
