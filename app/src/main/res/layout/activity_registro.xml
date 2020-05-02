@@ -13,7 +13,6 @@
         android:layout_marginTop="68dp"
         android:background="#009688"
         android:text="Registrar"
-        android:textColor="#FFFFFF"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.935"
@@ -25,9 +24,7 @@
         android:layout_width="164dp"
         android:layout_height="64dp"
         android:layout_marginTop="68dp"
-        android:background="#009688"
         android:text="Ingresar"
-        android:textColor="#FFFFFF"
         android:textSize="20dp"
         app:layout_constraintEnd_toStartOf="@+id/btn_registrar"
         app:layout_constraintHorizontal_bias="0.373"
@@ -41,7 +38,6 @@
         android:layout_marginTop="116dp"
         android:ems="10"
         android:hint="Nombre"
-        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -49,7 +45,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#ffffff" />
+            android:inputType="textPersonName" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -59,7 +55,6 @@
         android:layout_marginTop="52dp"
         android:ems="10"
         android:hint="Correo Electronico"
-        android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_nombre">
@@ -67,7 +62,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#ffffff" />
+            android:inputType="textEmailAddress" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -77,7 +72,6 @@
         android:layout_marginTop="52dp"
         android:ems="10"
         android:hint="Clave"
-        android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_email">
@@ -85,7 +79,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#ffffff" />
+            android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
 

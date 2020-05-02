@@ -13,6 +13,8 @@ import android.widget.EditText;
 import com.fcp.reportebasuras.menuapp.MenuAppRBas;
 import com.fcp.reportebasuras.modelo.dao.UsuarioDAO;
 import com.fcp.reportebasuras.modelo.vo.Usuario;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
+import com.google.android.material.textfield.TextInputLayout;
 
 public class Registro extends AppCompatActivity {
 
@@ -26,26 +28,25 @@ public class Registro extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Usuario user = new Usuario();
-                EditText txtUsuario = findViewById(R.id.txt_nombre);
-                EditText txtEmail = findViewById(R.id.txt_email);
-                user.setCorreo(txtEmail.getText().toString());
-                user.setNombres(txtUsuario.getText().toString());
-                if(user.getCorreo() != null && !user.getCorreo().isEmpty() &&
+                TextInputLayout txtUsuario = findViewById(R.id.txt_nombre);
+                TextInputLayout txtEmail = findViewById(R.id.txt_email);
+                user.setCorreo(txtEmail.getEditText().getText().toString());
+                user.setNombres(txtUsuario.getEditText().getText().toString());
+                if (user.getCorreo() != null && !user.getCorreo().isEmpty() &&
                         user.getNombres() != null && !user.getNombres().isEmpty()) {
-                    crearUsuarioenDB(user);
+                    //crearUsuarioenDB(user);
                     Intent pantallaPrincipal = new Intent(getApplicationContext(), MenuAppRBas.class);
                     startActivity(pantallaPrincipal);
-                }else{
-                    AlertDialog alertDialog = new AlertDialog.Builder(getApplicationContext()).create();
-                    alertDialog.setTitle("Mensaje");
-                    alertDialog.setMessage("Por favor registre su nombre y un correo valido");
-                    alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            dialog.dismiss();
-                        }
-                    });
-                    alertDialog.show();
+                } else {
+                    new MaterialAlertDialogBuilder(getApplicationContext())
+                            .setTitle("Mensaje")
+                            .setMessage("Por favor registre su nombre y un correo valido")
+                            .setNeutralButton("OK", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    dialog.dismiss();
+                                }
+                            }).show();
                 }
             }
         });
